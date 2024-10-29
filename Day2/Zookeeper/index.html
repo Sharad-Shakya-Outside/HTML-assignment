@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d-flex {
+            display: flex;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .required {
+            color: #b50000;
+        }
+
+        .btn {
+            font-size: 0.8rem;
+            padding: 0.5rem 1rem;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        fieldset {
+            border-color: rgba(195, 185, 185, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="margin-bottom: 4px;">Zoo Keeper Application Form</h1>
+        <i style="margin-top: none;">Please complete the form. Mandatory fields are marked with a </i><span
+            class="required">*</span>
+    </header>
+
+    <br>
+    <br>
+
+    <main>
+        <form action="">
+            <section>
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <table cellpadding="8">
+                        <tr>
+                            <th width="150">
+                                <label for="name">Name <span class="required">*</span></label>
+                            </th>
+                            <td>
+                                <input type="text" id="name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="telephone">Telephone</label>
+                            </th>
+                            <td>
+                                <input type="tel" id="telephone">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="email">Email <span class="required">*</span></label>
+                            </th>
+                            <td>
+                                <input type="email" id="email">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </section>
+
+            <br>
+
+            <section>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <table cellpadding="8">
+                        <tr>
+                            <th width="150">
+                                <label for="age">Age</label>
+                            </th>
+                            <td>
+                                <input type="number" id="age">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="gender">
+                                    Gender
+                                </label>
+                            </th>
+                            <td>
+                                <select name="gender" id="gender">
+                                    <option value="female" id="gender">Female</option>
+                                    <option value="male" id="gender">Male</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="when">When did you first know you wanted to be a zoo-keeper</label>
+                            </th>
+                            <td>
+                                <textarea name="when" id="when"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </section>
+
+            <br>
+
+            <section>
+                <fieldset>
+                    <legend>Pick Your Favorite Animals</legend>
+                    <article class="grid-container">
+                        <div>
+                            <input type="checkbox" value="zebra" id="zebra">
+                            <label for="zebra">Zebra</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="cat" id="cat">
+                            <label for="cat">Cat</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="anaconda" id="anaconda">
+                            <label for="anaconda">Anaconda</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="human" id="human">
+                            <label for="human">Human</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="elephant" id="elephant">
+                            <label for="elephant">Elephant</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="wildebeest" id="wildebeest">
+                            <label for="wildebeest">Wildebeest</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="pigeon" id="pigeon">
+                            <label for="pigeon">Pigeon</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="crab" id="crab">
+                            <label for="crab">Crab</label>
+                        </div>
+                    </article>
+                </fieldset>
+            </section>
+
+            <br>
+
+            <button type="submit" class="btn">Submit Application</button>
+        </form>
+    </main>
+</body>
+
+</html>

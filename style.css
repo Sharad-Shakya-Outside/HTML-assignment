@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #f13a07;
+}
+
+.container {
+    width: 100vw;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title:nth-of-type(odd) {
+    font-size: 8rem;
+}
+
+.title:nth-of-type(even) {
+    font-size: 5rem;
+    border: 1px solid var(--primary);
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+
+    background-color: var(--primary);
+    color: white;
+}
+
+.card {
+    margin-block: 3rem;
+    padding: 2rem;
+    border: 1px solid var(--primary);
+}
+
+.card legend {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card a {
+    display: block;
+    margin-block: 1rem;
+
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 700;
+
+    border: 1px solid var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+}
+
+.card a:hover {
+    background-color: var(--primary);
+    color: white;
+}
