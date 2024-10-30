@@ -53,10 +53,10 @@
                     <table cellpadding="8">
                         <tr>
                             <th width="150">
-                                <label for="name">Name <span class="required">*</span></label>
+                                <label for="name">Name <span class="required" aria-hidden="true">*</span></label>
                             </th>
                             <td>
-                                <input type="text" id="name">
+                                <input type="text" id="name" aria-required="true" required>
                             </td>
                         </tr>
                         <tr>
@@ -69,10 +69,10 @@
                         </tr>
                         <tr>
                             <th>
-                                <label for="email">Email <span class="required">*</span></label>
+                                <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
                             </th>
                             <td>
-                                <input type="email" id="email">
+                                <input type="email" id="email" aria-required="true" rquired>
                             </td>
                         </tr>
                     </table>
@@ -101,8 +101,8 @@
                             </th>
                             <td>
                                 <select name="gender" id="gender">
-                                    <option value="female" id="gender">Female</option>
-                                    <option value="male" id="gender">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="male">Male</option>
                                 </select>
                             </td>
                         </tr>
